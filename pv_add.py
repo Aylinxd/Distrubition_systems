@@ -23,13 +23,13 @@ while i < num:
     elements_0f_mon = dss.monitors_read_element()
     print(elements_0f_mon)
     print(dss.monitors_num_channels())
+    pow = dss.cktelement_powers()
+    volt = dss.cktelement_voltages()
+    print(pow)
+    print(volt)
     i += 1
 
 
 dss.monitors_show()
 #dss.circuit_set_active_element('load.650')
-pow = dss.cktelement_powers()
-volt = dss.cktelement_voltages()
-print(pow)
-print(volt)
 
